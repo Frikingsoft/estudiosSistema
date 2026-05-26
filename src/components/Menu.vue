@@ -1,7 +1,7 @@
 <template>
      <div class="menu">
       <nav class="botones_menu">
-        <button class="botones">
+        <button class="botones" @click="inicio">
           🏠
         </button>
 
@@ -19,6 +19,14 @@
         </nav>
     </div>
 </template>
+<script setup>
+  import { useRouter } from "vue-router"
+  const router = useRouter()
+  const inicio =()=>{
+    router.push("/")
+  } 
+</script>
+
 <style scoped>
     .escritorio {
   width: 100%;
@@ -35,7 +43,7 @@
 
   width: 100%;
   height: 48px;
-
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;

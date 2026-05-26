@@ -1,11 +1,10 @@
 <template>
   <div class="escritorio">
-    <Menu/>
+    <Router-View/>
+   
   </div>
 </template>
-<script setup>
-  import Menu from "./components/Menu.vue"
-</script>
+
 
 <style>
 body {
